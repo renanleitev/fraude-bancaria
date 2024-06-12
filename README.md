@@ -22,12 +22,25 @@ Link para a base de dados original: https://www.kaggle.com/datasets/ealaxi/paysi
 
 ## Pré-requisitos
 
-1. Python
-2. Pip
+1. [Python](https://www.python.org/)
+2. [Pip](https://pypi.org/project/pip/)
+3. [Git](https://www.git-scm.com/)
 
 ## Instalação (Linux)
 
-Primeiro, crie um novo [ambiente virtual](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) na pasta:
+Clone esse repositório:
+
+```
+git clone https://github.com/renanleitev/fraude-bancaria.git
+```
+
+Acesse a pasta do projeto:
+
+```
+cd fraude-bancaria
+```
+
+Após, crie um novo [ambiente virtual](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) na pasta:
 
 ```
 python -m venv .venv
@@ -37,6 +50,12 @@ Depois, ative o ambiente:
 
 ```
 source .venv/bin/activate
+```
+
+[VSCODE] Troque o ambiente Python pelo ambiente virtual:
+
+```
+https://code.visualstudio.com/docs/python/environments
 ```
 
 Para instalar as dependências, basta executar o comando abaixo no seu terminal:
@@ -53,7 +72,19 @@ streamlit run app.py
 
 ## Instalação (Windows)
 
-Primeiro, crie um novo [ambiente virtual](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) na pasta:
+Clone esse repositório:
+
+```
+git clone https://github.com/renanleitev/fraude-bancaria.git
+```
+
+Acesse a pasta do projeto:
+
+```
+cd fraude-bancaria
+```
+
+Após, crie um novo [ambiente virtual](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) na pasta:
 
 ```
 py -m venv .venv
@@ -64,6 +95,23 @@ Depois, ative o ambiente:
 ```
 .venv\Scripts\activate
 ```
+
+[VSCODE] Troque o ambiente Python pelo ambiente virtual:
+
+```
+https://code.visualstudio.com/docs/python/environments
+```
+
+Caso encontre um erro desse tipo:
+
+```
+"Não pode ser carregado porque a execução de scripts foi desabilitada neste sistema."
+```
+
+Siga esses tutoriais:
+
+1. https://pt.stackoverflow.com/questions/220078/o-que-significa-o-erro-execu%C3%A7%C3%A3o-de-scripts-foi-desabilitada-neste-sistema
+2. https://github.com/gr-knowledge/vscode/issues/5
 
 Para instalar as dependências, basta executar o comando abaixo no seu terminal:
 
