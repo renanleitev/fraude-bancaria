@@ -1,5 +1,11 @@
 # Aplicativo para detectar fraudes bancárias
 
+## Observação
+
+Inicialmente, estávamos utilizando a base de dados da [Covid-19](http://dados.recife.pe.gov.br/ne/dataset/perfil-das-pessoas-vacinadas-covid-19/resource/9664de94-9f07-4adc-848d-b6ef56510762), mas o conjunto de dados não era otimizado para aprendizado de máquina (não tinha uma variável resposta).
+
+Por conta disso, decidimos utilizar outra base de dados, voltada para a detecção de fraudes financeiras.
+
 ## Introdução
 
 O aplicativo tem como objetivo detectar fraudes bancárias a partir dos parâmetros passados.
