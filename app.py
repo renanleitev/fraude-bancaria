@@ -5,6 +5,7 @@ import requests
 from io import StringIO
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
+from imblearn.over_sampling import SMOTE
 
 file_id = '1OnX0UXo5UI5TqjaRp2b-vUVpt1U5HIJ0'
 url = f"https://drive.google.com/uc?id={file_id}"
@@ -90,7 +91,8 @@ Y = df['isFraud']
 random_seed = 77
 test_size = 0.25
 np.random.seed(random_seed)
-X_treino, X_teste, Y_treino, Y_teste = train_test_split(X, Y, test_size=test_size)
+X_resampled, Y_resampled = SMOTE().fit_resample(X, Y)
+X_treino, X_teste, Y_treino, Y_teste = train_test_split(X_resampled, Y_resampled, test_size=test_size)
 
 # Fazendo o fit do modelo
 model = DecisionTreeClassifier()
